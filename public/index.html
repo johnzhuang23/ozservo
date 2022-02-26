@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+    <div id="grid-6x6">
+        <div id='grid-map'>
+            <div id="map"></div>
+        </div>
+        <div id='grid-leftup-side'>
+            <h1 id="header-spotlight">Spotlight</h1>
+            <div id="spotlight-grid">
+                <div id="spotlight-brendon"></div>
+                <div id="spotlight-moya"></div>
+                <div id="spotlight-moey">refresh</div>
+            </div>
+        </div>
+        <div id='grid-left-side'>
+            <h1 id='header-stats'>Stats</h1>
+            <h2 id='total-stations'>total stations</h2>
+            <h2 id='header-stats'>breakdown by owners</h2>
+            <p>(number of less than 10 is not shown)</p>
+            <div id='stats-container'></div>
+        </div>
+        <div id='grid-rightup-side'>
+            <h1 id='header-current-location'>Current Location</h1>
+            <h3 id='h3-latitude'>latitude</h3>
+            <div id='latitude-value'>0</div>
+            <h3 id='h3-longitude'>longitude</h3>
+            <div id='longitude-value'>0</div>
+            <h3 id='h3-address'>address</h3>
+            <div id='address-value'>Melbourne</div>
+        </div>
+        <div id='grid-right-side'>
+            <h1 id='header-nearest-5'>Nearest 5</h1>
+            <div id='nearest-5-grid'>
+                <div id='nearest-5-list'>
+                    <div class='nearest-5-element'></div>
+                    <div class='nearest-5-element'></div>
+                    <div class='nearest-5-element'></div>
+                    <div class='nearest-5-element'></div>
+                    <div class='nearest-5-element'></div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnrllHPUWX0gUTN0Y96mytJuW8drF8ucM&callback=initMap"
+            async></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./client.js"></script>
+</body>
+
+</html>

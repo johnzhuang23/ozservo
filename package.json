@@ -1,0 +1,29 @@
+{
+  "name": "gravyapie",
+  "version": "1.0.0",
+  "description": "GravyAPIe project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmauthoor/gravyapie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmauthoor/gravyapie/issues"
+  },
+  "homepage": "https://github.com/mmauthoor/gravyapie#readme",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

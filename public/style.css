@@ -1,0 +1,162 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Special+Elite&display=swap');
+
+html, body {
+    width: 99vw;
+    height: 99vh;
+    overflow: hidden;
+    background-image: url("/icon/paper.png");
+    background-size: 100% 100%;
+}
+
+/* container grid */
+#grid-6x6 {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: 
+    "leftup map map map map rightup"
+    "leftup map map map map rightup"
+    "left map map map map right"
+    "left map map map map right"
+    "left map map map map right"
+    "left map map map map right";
+    height: 100%;
+    width: 100%;
+}
+
+#grid-map {
+    grid-area: map;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    width: 95%;
+    height: 100%;
+    box-shadow:rgba(1,1,1,1) 0px 10px 15px;
+}
+
+#grid-leftup-side {
+    grid-area: leftup;
+    width: 100%;
+    height: 100%;
+}
+
+#grid-left-side {
+    grid-area: left;
+    width: 100%;
+    height: 100%;
+}
+
+#grid-rightup-side {
+    grid-area:rightup;
+    width: 100%;
+    height: 100%;
+}
+
+#grid-right-side {
+    grid-area:right;
+    width: 100%;
+    height: 100%;
+}
+
+#header-spotlight,
+#header-stats,
+#total-stations,
+#header-current-location,
+#header-nearest-5{
+    font-family: 'Bangers', cursive;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 2px grey;
+}
+
+p {
+    font-family: 'Special Elite', cursive;
+}
+
+#stats-container {
+    font-family: 'Special Elite', cursive;
+}
+
+#nearest-5-list {
+    font-family: 'Special Elite', cursive;
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+
+#latitude-value,
+#longitude-value {
+    border: 1px solid black;
+    padding: 2px;
+    font-family: 'Special Elite', cursive;
+    background-color: white;
+}
+
+#h3-latitude,
+#h3-longitude {
+    margin: 5px 0 5px 0;
+    font-family: 'Special Elite', cursive;
+}
+
+#h3-address {
+    margin: 10px 0 5px 0;
+    font-family: 'Special Elite', cursive;
+}
+
+/* spotlight */
+
+#spotlight-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90%;
+    width: 100%;
+}
+
+#spotlight-brendon {
+    font-family: 'Special Elite', cursive;
+    Padding: 10px 0 10px 0;
+    Font-size:20px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#spotlight-moya {
+    font-family: 'Special Elite', cursive;
+    Padding: 10px 0 10px 0;
+    Font-size:20px;
+}
+
+#spotlight-moey {
+    font-family: 'Special Elite', cursive;
+    Font-size:20px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+/* nearest5 */
+#nearest-5-list {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.nearest-5-element {
+    margin: 10px 0 5px 0;
+    Padding: 10px 2px 10px 2px;
+    box-shadow:rgba(1,1,1,1) 0px 10px 15px;
+    border-radius: 5px;
+    height: 7vh;
+}
