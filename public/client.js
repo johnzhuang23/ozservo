@@ -21,7 +21,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -37.8304177, lng: 144.964172 },
     zoom: 13,
-    minZoom: 11
+    minZoom: 5
   });
   infoWindow = new google.maps.InfoWindow();
 
@@ -127,9 +127,9 @@ function initOwners() {
           let stationCountElement = document.createElement('div')
           stationCountElement.style.display = 'flex'
           stationCountElement.style.justifyContent = 'space-between'
-          stationCountElement.style.fontSize = '20px'
-          stationCountElement.style.marginBottom = '30px'
-          stationCountElement.style.fontWeight = '500'
+          stationCountElement.style.fontSize = '1.2em'
+          stationCountElement.style.marginBottom = '1.1em'
+          stationCountElement.style.fontWeight = '200'
           stationCountElement.style.color = servoColor[key]
           let ownerNameElement = document.createElement("div")
           let ownerCountElement = document.createElement('div')
